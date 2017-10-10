@@ -58,7 +58,7 @@ class EconomyManager {
     /**
      * @param string $economy
      */
-    public function setEconomy($economy) {
+    public function setEconomy(string $economy) {
         $this->plugin->getConfig()->set("economy", $economy);
         $this->plugin->getConfig()->save();
         self::$economy = $economy;
